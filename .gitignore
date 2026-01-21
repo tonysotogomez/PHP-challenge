@@ -1,0 +1,11 @@
+/game-01/vendor/
+/game-02/php/vendor/
+
+/game-01/.env
+/game-01/storage/*.key
+/game-01/storage/logs/
+/game-01/storage/framework/
+
+.phpunit.result.cache
+tests/approvals/*.received.txt
+.DS_Store
