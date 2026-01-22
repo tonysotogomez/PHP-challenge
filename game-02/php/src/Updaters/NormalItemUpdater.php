@@ -13,6 +13,7 @@ class NormalItemUpdater implements QualityUpdater
     {
         $item->sellIn--;
 
+        #siempre se reduce calidad, pero se reduce nuevamente si ya venció ($item->sellIn < 0)
         $decrement = ($item->sellIn < 0) ? 2 : 1;
         $item->quality = max(0, $item->quality - $decrement);
     }

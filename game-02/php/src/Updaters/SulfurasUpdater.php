@@ -11,5 +11,6 @@ class SulfurasUpdater implements QualityUpdater
 {
     public function update(Item $item): void
     {
+        #objeto legendario no tiene limite
     }
 }

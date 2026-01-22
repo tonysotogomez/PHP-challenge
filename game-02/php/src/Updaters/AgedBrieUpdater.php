@@ -13,11 +13,15 @@ class AgedBrieUpdater implements QualityUpdater
     {
         $item->sellIn--;
 
+        #aumento normal de calidad
         $item->quality++;
+
+        #si ya venció se aumenta calidad nuevamente
         if ($item->sellIn < 0) {
             $item->quality++;
         }
 
+        #regla para mantener el limite
         if ($item->quality > 50) {
             $item->quality = 50;
         }
